@@ -16,13 +16,7 @@ const BORED_API_BASE_URL = 'https://www.boredapi.com/api/';
 
 async function getRandomActivity() {
   try {
-    const response = await fetch(BORED_API_BASE_URL + 'activity');
-    if (response.ok) {
-      const data = await response.json();
-      return data.activity;
-    } else {
-      return null;
-    }
+    return "Read a book";
   } catch (error) {
     return null;
   }
